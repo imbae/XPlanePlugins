@@ -335,7 +335,7 @@ void StartPILS(void)
 	memset(Buffer, 0, 48);
 
 	ServerInfo.sin_family = AF_INET; // IPv4 주소체계 사용 
-	ServerInfo.sin_addr.s_addr = inet_addr("192.168.0.2"); // 루프백 IP. 즉 혼자놀이용..
+	ServerInfo.sin_addr.s_addr = inet_addr("127.0.0.1"); // 루프백 IP. 즉 혼자놀이용..
 	ServerInfo.sin_port = htons(ServerPort); // 포트번호
 
 	// 소켓 생성
