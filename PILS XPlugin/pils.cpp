@@ -332,7 +332,7 @@ void StartPILS(void)
 	// memset : 사용자가 정한 메모리 크기만큼 메모리 영역을 특정한 값으로 채움
 	memset(&ServerInfo, 0, sizeof(ServerInfo)); // 0으로 초기화
 	memset(&FromClient, 0, sizeof(FromClient));
-	memset(Buffer, 0, 24);
+	memset(Buffer, 0, 48);
 
 	ServerInfo.sin_family = AF_INET; // IPv4 주소체계 사용 
 	ServerInfo.sin_addr.s_addr = inet_addr("192.168.0.2"); // 루프백 IP. 즉 혼자놀이용..
